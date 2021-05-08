@@ -4,9 +4,10 @@ import numpy as np
 import plotly.express as px
 from plotly.subplots import make_subplots
 import plotly.graph_objects as go
-df=pd.read_csv('A.csv')
-df1=pd.read_csv('B.csv')
-df2=pd.read_csv('C.csv')
+
+df=pd.read_csv('Electricity Generation (Renewable)_D_20210426_204247 (1).csv')
+df1=pd.read_csv('Electricity Generation by Source_D_20210426_203928.csv')
+df2=pd.read_csv('Electricity Generation by State_D_20210426_203611 (1).csv')
 df3=pd.read_csv('Renewable Electricity Capacity by State_D_20210426_203204.csv')
 df4=pd.read_csv('Electricity Potential by Energy Source_D_20210427_132109.csv')
 df5=pd.read_csv('Electricity Potential by State_D_20210427_131321.csv')
@@ -15,6 +16,7 @@ df7=pd.read_csv('Electricity Capacity by Energy Source_D_20210427_143811.csv')
 st.sidebar.title("Energy")
 visualization = st.sidebar.selectbox('Select a type',('Potential','Generation','Capacity','Insights'))
 select_chart = st.sidebar.selectbox('Select a Chart',('Bar Chart','Bubble Chart','Pie'))
+
 
 st.markdown('''
     <div class="jumbotron text-center" style='background-color: #fff'>
@@ -129,7 +131,8 @@ elif visualization=='Potential':
 elif visualization=='Insights': 
   st.markdown('''
     <div class="jumbotron text-center" style='background-color: #fff'>
-    <h1 style="margin: auto; width: 100%;">INSIGHTS FROM ANALYSIS IN ENERGY DOMAIN</h1>
+    <br><br><br>
+    <h1 style="margin: auto; width: 100%;">INSIGHTS 1112221 FROM ANALYSIS IN ENERGY DOMAIN</h1>
  
  
     </div>
